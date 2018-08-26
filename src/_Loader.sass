@@ -1,0 +1,23 @@
+.loader 
+    display: inline-block
+    width: 10rem
+    height: 10rem
+    
+    &:after
+        content: " "
+        display: block
+        width: 10rem
+        height: 10rem
+        margin: 1rem
+        border-radius: 50%
+        border: 1rem solid $color-primary
+        border-color: $color-primary transparent $color-primary transparent
+        animation: loader 1.4s linear infinite
+
+    @keyframes loader
+        0%
+            transform: rotate(0deg)
+        100% 
+            transform: rotate(360deg)
+        
+    

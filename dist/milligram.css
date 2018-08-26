@@ -18,7 +18,7 @@ html {
 }
 
 body {
-  color: #606c76;
+  color: #545454;
   font-family: 'Roboto', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
   font-size: 1.6em;
   font-weight: 300;
@@ -42,12 +42,12 @@ button,
 input[type='button'],
 input[type='reset'],
 input[type='submit'] {
-  background-color: #9b4dca;
-  border: 0.1rem solid #9b4dca;
+  background-color: #0D47A1;
+  border: 0.1rem solid #0D47A1;
   color: #fff;
   cursor: pointer;
   display: inline-block;
-  font-size: 1.1rem;
+  font-size: 1.4rem;
   font-weight: 700;
   height: 3.8rem;
   letter-spacing: .1rem;
@@ -92,8 +92,8 @@ input[type='reset'][disabled]:focus,
 input[type='reset'][disabled]:hover,
 input[type='submit'][disabled]:focus,
 input[type='submit'][disabled]:hover {
-  background-color: #9b4dca;
-  border-color: #9b4dca;
+  background-color: #0D47A1;
+  border-color: #0D47A1;
 }
 
 .button.button-outline,
@@ -102,7 +102,7 @@ input[type='button'].button-outline,
 input[type='reset'].button-outline,
 input[type='submit'].button-outline {
   background-color: transparent;
-  color: #9b4dca;
+  color: #0D47A1;
 }
 
 .button.button-outline:focus, .button.button-outline:hover,
@@ -129,7 +129,7 @@ input[type='reset'].button-outline[disabled]:hover,
 input[type='submit'].button-outline[disabled]:focus,
 input[type='submit'].button-outline[disabled]:hover {
   border-color: inherit;
-  color: #9b4dca;
+  color: #0D47A1;
 }
 
 .button.button-clear,
@@ -139,7 +139,7 @@ input[type='reset'].button-clear,
 input[type='submit'].button-clear {
   background-color: transparent;
   border-color: transparent;
-  color: #9b4dca;
+  color: #0D47A1;
 }
 
 .button.button-clear:focus, .button.button-clear:hover,
@@ -165,7 +165,7 @@ input[type='reset'].button-clear[disabled]:focus,
 input[type='reset'].button-clear[disabled]:hover,
 input[type='submit'].button-clear[disabled]:focus,
 input[type='submit'].button-clear[disabled]:hover {
-  color: #9b4dca;
+  color: #0D47A1;
 }
 
 code {
@@ -179,7 +179,7 @@ code {
 
 pre {
   background: #f4f5f6;
-  border-left: 0.3rem solid #9b4dca;
+  border-left: 0.3rem solid #0D47A1;
   overflow-y: hidden;
 }
 
@@ -240,7 +240,7 @@ input[type='datetime-local']:focus,
 input:not([type]):focus,
 textarea:focus,
 select:focus {
-  border-color: #9b4dca;
+  border-color: #0D47A1;
   outline: 0;
 }
 
@@ -453,7 +453,7 @@ input[type='radio'] {
 }
 
 a {
-  color: #9b4dca;
+  color: #0D47A1;
   text-decoration: none;
 }
 
@@ -655,6 +655,33 @@ img {
 
 .float-right {
   float: right;
+}
+
+.loader {
+  display: inline-block;
+  width: 10rem;
+  height: 10rem;
+}
+
+.loader:after {
+  content: " ";
+  display: block;
+  width: 10rem;
+  height: 10rem;
+  margin: 1rem;
+  border-radius: 50%;
+  border: 1rem solid #0D47A1;
+  border-color: #0D47A1 transparent #0D47A1 transparent;
+  animation: loader 1.4s linear infinite;
+}
+
+@keyframes loader {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 /*# sourceMappingURL=milligram.css.map */
